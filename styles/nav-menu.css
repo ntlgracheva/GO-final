@@ -1,0 +1,138 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation__menu-button {
+    display: none;
+    width: 54px;
+    height: 29px;
+    background-color: transparent;
+    border: none;
+    color: var(--color-violet-medium);
+    transition: color 0.2s linear;
+}
+
+.navigation__menu-button:hover {
+    color: var(--color-violet-light);
+}
+
+.navigation__menu-button:active {
+    color: var(--color-violet-secondary3);
+}
+
+.navigation__menu-button:focus,
+.navigation__menu-button svg:focus {
+    outline: none;
+    color: var(--color-violet-light);
+}
+
+.navigation__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    max-width: 587px;
+    text-transform: uppercase;
+    line-height: 50px;
+    white-space: nowrap;
+}
+
+.navigation__list-item {
+    transition: color 200ms;
+}
+
+.navigation__list-item:hover {
+    color: #CD06FF;
+}
+
+.navigation__link-home {
+    width: 12%;
+    max-width: 120px;
+}
+
+.navigation__logo-img {
+    height: 100%;
+}
+
+.button.book-call {
+    max-width: 280px;
+    padding: 12px 2%;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--color-white);
+    border-radius: 10px;
+    border: 3px solid var(--color-violet-light);
+    text-transform: uppercase;
+    background-color: transparent;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.button.book-call:hover,
+.button.book-call:focus {
+    border-color: var(--color-violet-medium);
+    background-color: var(--color-violet-medium);
+    outline: none;
+    transition: background-color 200ms linear, border-color 200ms linear;
+}
+
+.button.book-call:active {
+    background-color: var(--color-violet-secondary3);
+    border: 1px solid #000000;
+}
+
+
+@media (max-width:1024px) {
+
+    .navigation__list {
+        max-width: 430px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    .navigation__link-home {
+        width: 12%;
+        max-width: 87px;
+        height: 55px;
+    }
+
+    .button.book-call {
+        max-width: 229px;
+        padding: 10px 3%;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width:768px) {
+    .navigation__menu-button {
+        display: block;
+    }
+
+    .navigation__list {
+        display: none;
+    }
+
+    .navigation__link-home {
+        width: 87px;
+        height: 55px;
+    }
+}
+
+@media (max-width:768px) {
+    .button.book-call {
+        display: none;
+    }
+}
+
+@media (max-width:320px) {
+
+    .navigation__menu-button {
+        width: 39px;
+        height: 20px;
+    }
+}

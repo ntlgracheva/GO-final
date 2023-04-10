@@ -1,0 +1,112 @@
+.block.we-have {
+    padding-bottom: calc(50px + 70px);
+}
+
+.we-have__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap-row) var(--gap-column);
+}
+
+.we-have__item {
+    position: relative;
+    padding-bottom: calc((100% / var(--cart-count) - (var(--gap-column) * (var(--cart-count) - 1)) / var(--cart-count)) * 0.6);
+    flex-basis: calc(100% / var(--cart-count) - (var(--gap-column) * (var(--cart-count) - 1)) / var(--cart-count));
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.we-have__item-translated {
+    transform: translateY(70px);
+}
+
+.we-have__item-title {
+    position: absolute;
+    display: block;
+    min-height: 56px;
+    bottom: 6px;
+    left: 10%;
+    right: 10%;
+}
+
+.we-have__item.vr-glasses {
+    background-image: url(../images/we-have/vr-glasses.png);
+}
+
+.we-have__item.audio-system {
+    background-image: url(../images/we-have/audio-system.png);
+}
+
+.we-have__item.karaoke {
+    background-image: url(../images/we-have/karaoke.png);
+}
+
+.we-have__item.table-games {
+    background-image: url(../images/we-have/table-games.png);
+}
+
+.we-have__item.cinema-services {
+    background-image: url(../images/we-have/cinema-services.png);
+}
+
+.we-have__item.playstation {
+    background-image: url(../images/we-have/playstation.png);
+}
+
+.we-have__item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+}
+
+.we-have__item-translated:hover {
+    transform: translateY(70px) scale(1.1);
+}
+
+@media (max-width:1024px) {
+    .block.we-have {
+        padding-bottom: calc(35px + 53px);
+    }
+
+    .we-have__item-translated {
+        transform: translateY(53px);
+    }
+
+    .we-have__item-title {
+        bottom: 6px;
+        left: 10%;
+        right: 10%;
+        font-size: 20px;
+    }
+
+    .we-have__item-translated:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width:768px) {
+    .block.we-have {
+        padding-bottom: 30px;
+    }
+
+    .we-have__item-translated {
+        transform: translateY(0);
+    }
+
+    .we-have__item-title {
+        bottom: 12px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+}
+
+@media (max-width:580px) {
+    .we-have__item-title {
+        min-height: 42px;
+        bottom: 3px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+}

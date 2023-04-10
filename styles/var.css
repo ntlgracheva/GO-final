@@ -1,0 +1,29 @@
+:root {
+    --color-white: #FFFFFF;
+    --color-black: #1B1A1B;
+    --color-violet-dark: #440F51;
+    --color-violet-medium: #6C0287;
+    --color-violet-light: #CD06FF;
+    --color-violet-secondary1: #370A37;
+    --color-violet-secondary2: #1B1A1B;
+    --color-violet-secondary3: #640AA3;
+    --color-violet-secondary4: #840AA3;
+    --color-violet-secondary5: #EADEED;
+
+    --cart-count: 3;
+    --gap-row: 40px;
+    --gap-column: 20px;
+}
+@media (max-width:1024px){
+    :root{
+        --gap-row: 30px;
+    }
+}
+
+@media (max-width:768px){
+    :root{
+        --cart-count: 2;
+        --gap-row: 20px;
+        --gap-column: 20px;
+    }
+}

@@ -1,0 +1,172 @@
+@import url(normalize.css);
+@import url(global-styles.css);
+@import url(var.css);
+
+@import url(banner.css);
+@import url(halls.css);
+@import url(about-us.css);
+@import url(reviews.css);
+@import url(faq.css);
+@import url(contacts.css);
+@import url(nav-menu.css);
+@import url(we-have.css);
+@import url(booking.css);
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.25rem;
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+header section {
+    padding-top: 38px;
+    padding-bottom: 8px;
+}
+
+footer {
+    padding-top: 95px;
+    padding-bottom: 21px;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: var(--color-violet-secondary1);
+    text-align: right;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.footer__designer-mail {
+    transition: color 200ms;
+}
+
+.footer__designer:hover .footer__designer-mail {
+    color: var(--color-violet-light);
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 130px;
+}
+
+section {
+    padding: 50px 0;
+}
+
+
+.block__title {
+    margin-bottom: 60px;
+    font-size: 40px;
+    line-height: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media (max-width:1024px) {
+    header section {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+
+    footer {
+        padding-top: 57px;
+        padding-bottom: 19px;
+    }
+
+    .container {
+        max-width: 1024px;
+        padding: 0 60px;
+    }
+
+    section {
+        padding: 35px 0;
+    }
+
+    .block__title {
+        margin-bottom: 36px;
+        font-size: 30px;
+        line-height: 40px;
+
+    }
+}
+
+
+
+
+@media (max-width:768px) {
+    header section {
+        padding-top: 32px;
+        padding-bottom: 15px;
+    }
+
+    footer {
+        padding-top: 40px;
+        padding-bottom: 18px;
+    }
+
+    .container {
+        max-width: 768px;
+        padding: 0 40px;
+    }
+
+    section {
+        padding: 30px 0;
+    }
+
+    .block__title {
+        margin-bottom: 30px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width:320px) {
+    header section {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    footer {
+        padding-top: 48px;
+        padding-bottom: 24px;
+        font-size: 12px;
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .footer__copyright {
+        margin-bottom: 19px;
+    }
+
+    .container {
+        max-width: 320px;
+        padding: 0 20px;
+    }
+
+
+    section {
+        padding: 15px 0;
+    }
+
+    .block__title {
+        margin-bottom: 15px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}

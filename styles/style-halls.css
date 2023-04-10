@@ -1,0 +1,283 @@
+@import url(normalize.css);
+@import url(global-styles.css);
+@import url(var.css);
+
+@import url(nav-menu.css);
+@import url(style.css);
+
+
+
+header section {
+    padding-top: 30px;
+    padding-bottom: 58px;
+}
+
+.go-home {
+    margin-bottom: 20px;
+}
+
+.go-home__link {
+    transition: color 200ms;
+}
+
+.go-home__link:hover {
+    color: var(--color-violet-light);
+}
+
+.go-home__arrow {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.hall-presentation {
+    min-height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hall-presentation-vibes {
+    background-image: url(../images/halls-pages/vibes-banner.png);
+}
+
+.hall-presentation-neon {
+    background-image: url(../images/halls-pages/neon-banner.png);
+}
+
+.hall-presentation-starwars {
+    background-image: url(../images/halls-pages/starwars-banner.png);
+}
+
+.hall-presentation-wildwest {
+    background-image: url(../images/halls-pages/wildwest-banner.png);
+}
+
+.banner__title {
+    font-family: Arial;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: normal;
+}
+
+.hall-description__text {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+}
+
+.hall-details__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.hall-details__image {
+    width: 50.8%;
+    padding-bottom: 35.9%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hall-details__image-vibes {
+    background-image: url(../images/halls-pages/vibes-room.png);
+}
+
+.hall-details__image-starwars {
+    background-image: url(../images/halls-pages/starwars-room.png);
+}
+
+.hall-details__image-wildwest {
+    background-image: url(../images/halls-pages/wildwest-room.png);
+}
+
+.hall-details__image-neon {
+    background-image: url(../images/halls-pages/neon-room.png);
+}
+
+.hall-details__text {
+    width: 42%;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.hall-details__paragraph:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.other-halls__list {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.other-halls__item {
+    position: relative;
+    flex-basis: 32%;
+    padding-bottom: 19.4%;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.other-halls__item.wildwest {
+    background-image: url(../images/halls-pages/wildwest-room.png);
+}
+
+.other-halls__item.neon {
+    background-image: url(../images/halls-pages/neon-room.png);
+}
+
+.other-halls__item.starwars {
+    background-image: url(../images/halls-pages/starwars-room.png);
+}
+
+.other-halls__item.vibes {
+    background-image: url(../images/halls-pages/vibes-room.png);
+}
+
+.other-halls__wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width:1024px) {
+    header section {
+        padding-top: 32px;
+        padding-bottom: 63px;
+    }
+
+    .hall-presentation {
+        min-height: 534px;
+    }
+
+    .hall-description__text {
+        max-width: 800px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .hall-details__text {
+        width: 45.6%;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+}
+
+@media (max-width:768px) {
+    header section {
+        padding-bottom: 58px;
+    }
+
+    .hall-presentation {
+        min-height: 402px;
+
+    }
+
+    .banner__title {
+        font-size: 60px;
+        line-height: 72px;
+    }
+
+    .hall-description__text {
+        max-width: 688px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .hall-details__image {
+        width: 47.8%;
+        padding-bottom: 47.3%;
+    }
+
+    .hall-details__text {
+        width: 45.5%;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .other-halls__item {
+        flex-basis: 32.55%;
+        padding-bottom: 19.4%;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width:320px) {
+    header section {
+        padding-top: 20px;
+        padding-bottom: 36px;
+    }
+
+    .go-home__arrow {
+        margin-right: 6px;
+    }
+
+    .hall-presentation {
+        min-height: 168px;
+    }
+
+    .banner__title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .hall-description__text {
+        max-width: 280px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .hall-details__wrapper {
+        flex-direction: column;
+    }
+
+    .hall-details__image {
+        width: 100%;
+        padding-bottom: 64.28%;
+        margin-bottom: 15px;
+    }
+
+    .hall-details__text {
+        width: 100%;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .other-halls__list {
+        flex-direction: column;
+    }
+
+    .other-halls__item {
+        position: relative;
+        flex-basis: 100%;
+        padding-bottom: 50%;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .other-halls__item:not(:last-child) {
+        margin-bottom: 5px;
+    }
+}
