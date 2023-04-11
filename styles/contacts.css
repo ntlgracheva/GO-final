@@ -15,8 +15,6 @@
 }
 
 .contacts__icon {
-    display: inline-block;
-
     margin-right: 30px;
     color: var(--color-violet-light);
 }
@@ -76,6 +74,7 @@
 }
 
 .contacts__item {
+    display: flex;
     cursor: pointer;
     transition: color 200ms linear;
 }
@@ -129,6 +128,7 @@
     }
 
     .contacts__item:not(:last-child) {
+        justify-content: center;
         margin-bottom: 27px;
     }
 

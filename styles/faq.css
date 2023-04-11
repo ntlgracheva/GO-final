@@ -30,10 +30,24 @@
     transition: background-color 200ms linear, color 200ms linear;
 }
 
+/*
 .button-open:after {
     content: "+";
     display: block;
     font-size: 28px;
+}*/
+
+.button-open__plus {
+    position: absolute;
+    top: calc((100% - 20px) / 2);
+    left: calc((100% - 20px) / 2);
+}
+
+.button-open__minus {
+    color: transparent;
+    position: absolute;
+    top: calc((100% - 20px) / 2);
+    left: calc((100% - 20px) / 2);
 }
 
 .questions__item_bg_violet .button-open {
@@ -67,8 +81,12 @@
 }
 
 
-.button-open:active:after {
-    content: "―";
+.button-open:active .button-open__minus {
+    color: inherit;
+}
+
+.button-open:active .button-open__plus {
+    color: transparent;
 }
 
 @media (max-width:1024px) {

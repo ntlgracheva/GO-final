@@ -4,6 +4,7 @@
 }
 
 .banner__text {
+    font-size: 28px;
     margin-bottom: 65px;
     padding-left: 100px;
 }
@@ -30,27 +31,30 @@
     background-position: center;
     background-size: 100%;
     bottom: 0;
-    left: 45%;
+    right: 130px;
+    /*left: 45%;*/
 
 }
 
 .banner__text-group {
-    max-width: 348px;
+    max-width: 399px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
     align-items: end;
+    margin-bottom: 150px;
+    font-size: 30px;
+    line-height: 34px;
 }
 
-.banner__text-paragraph {
-    margin-bottom: 150px;
-
+.banner__text-paragraph:nth-child(1) {
+    margin-right: 40px;
 }
 
 .banner__text-violet {
     display: block;
     font-weight: 900;
+    line-height: 100px;
     color: var(--color-violet-light);
 }
 
@@ -60,11 +64,12 @@
 
 .banner__text-violet.text {
     font-size: 75px;
+    line-height: 106px;
     font-variant: all-small-caps;
 }
 
 .button.book-place-bg-violet {
-    display: inline-block;
+    display: block;
     height: 80px;
     width: 374px;
     font-size: 26px;
@@ -75,6 +80,8 @@
     background-color: var(--color-violet-medium);
     text-transform: uppercase;
     color: var(--color-white);
+    text-align: center;
+    box-shadow: 0 0 10px var(--color-violet-medium);
 }
 
 .button.book-place-bg-violet:hover,
@@ -141,7 +148,7 @@
     }
 
     .banner::after {
-        left: 35%;
+        /*left: 35%;*/
     }
 
     .button.book-place-bg-violet {
@@ -164,25 +171,30 @@
 
     .banner__text {
         margin-bottom: 58px;
+        font-size: 22px;
     }
 
     .banner::after {
         width: 453px;
         height: 520px;
-        left: 45%;
+        right: 60px;
     }
 
-    .banner__text-paragraph {
-        font-size: 26px;
+    .banner__text-group {
+        max-width: 348px;
         margin-bottom: 80px;
+        font-size: 26px;
+        line-height: 30px;
     }
 
     .banner__text-violet.number {
         font-size: 80px;
+        line-height: 113px;
     }
 
     .banner__text-violet.text {
         font-size: 60px;
+        line-height: 84px;
     }
 
     button.book-place-bg-violet {
@@ -226,30 +238,42 @@
 @media (max-width:768px) {
     .banner__text {
         margin-bottom: 65px;
+        font-size: 18px;
     }
 
     .banner::after {
         width: 409px;
         height: 474px;
+        right: 40px;
     }
 
     .banner__text-group {
-        max-width: 217px;
+        max-width: 222px;
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 100px;
     }
 
-    .banner__text-paragraph {
-        font-size: 16px;
-        margin-bottom: 100px;
+    .banner__text-paragraph:nth-child(1) {
+        margin-right: 30px;
     }
 
     .banner__text-violet.number {
         font-size: 50px;
+        line-height: 70px;
     }
 
     .banner__text-violet.text {
         font-size: 40px;
+        line-height: 56px;
     }
 
+    .button.book-place-bg-violet {
+        height: 46px;
+        width: 214px;
+        font-size: 16px;
+        line-height: 46px;
+    }
 
     .button.circle.down {
         display: none;
@@ -274,6 +298,7 @@
     .banner__title {
         font-size: 35px;
         line-height: 35px;
+        margin-bottom: 6px;
     }
 
     .banner__text {
@@ -286,24 +311,27 @@
     .banner::after {
         width: 161px;
         height: 179px;
-        left: 60%;
     }
 
     .banner__text-group {
         max-width: 139px;
+        font-size: 10px;
+        line-height: 12px;
+        margin-bottom: 38px
     }
 
-    .banner__text-paragraph {
-        font-size: 10px;
-        margin-bottom: 30px;
+    .banner__text-paragraph:nth-child(1) {
+        margin-right: 20px;
     }
 
     .banner__text-violet.number {
         font-size: 26px;
+        line-height: 36px;
     }
 
     .banner__text-violet.text {
         font-size: 22px;
+        line-height: 31px;
     }
 
 
@@ -312,11 +340,12 @@
         width: 117px;
         font-size: 10px;
         line-height: 27px;
+        border-radius: 4px;
     }
 }
 
 @media (max-width:320px) {
     .banner::after {
-        left: 45%;
+        right: 20px;
     }
 }

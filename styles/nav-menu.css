@@ -81,7 +81,7 @@
 
 .button.book-call:active {
     background-color: var(--color-violet-secondary3);
-    border: 1px solid #000000;
+    border: 3px solid var(--color-violet-secondary3);
 }
 
 

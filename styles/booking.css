@@ -91,6 +91,7 @@
 .form-additional label:not(:last-child) {
     margin-bottom: 20px;
     line-height: 27px;
+    cursor: pointer;
 }
 
 .form-table-games__input,
@@ -98,6 +99,7 @@
     width: 25px;
     height: 25px;
     margin-right: 12px;
+    cursor: pointer;
 }
 
 .form__fieldset.form-get-date {
@@ -262,7 +264,7 @@ input[type="checkbox"]:focus {
     .form-playstation__input,
     .form-table-games__input,
     .form-additional__input {
-        width: 40px;
+        min-width: 40px;
         height: 40px;
         margin-right: 20px;
     }

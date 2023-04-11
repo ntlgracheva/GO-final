@@ -46,17 +46,20 @@
 }
 
 .blockquote__cite {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    max-width: 389px;
     height: 80px;
-    margin-left: 120px;
-    padding-left: 120px;
+    margin-left: auto;
     line-height: 28px;
     font-style: normal;
-    background-image: url(../icons/about-us/user-icon.png);
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
+.blockquote__user-foto {
+    width: 80px;
+    height: 80px;
+    margin-right: 29px;
+}
 
 @media (max-width:1180px) {
     .blockquote__text {
@@ -88,14 +91,18 @@
         font-size: 30px;
     }
 
+
     .blockquote__cite {
-        margin-left: 95px;
-        padding-left: 105px;
-        line-height: 26px;
-        background-image: url(../icons/about-us/user-icon.png);
-        background-size: contain;
-        background-repeat: no-repeat;
+        max-width: 330px;
+        height: 78px;
         font-size: 18px;
+        line-height: 26px;
+    }
+
+    .blockquote__user-foto {
+        width: 70px;
+        height: 70px;
+        margin-right: 35px;
     }
 }
 
@@ -125,11 +132,17 @@
         font-size: 32px;
     }
 
+    .blockquote__text {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
     .blockquote__cite {
-        width: 50%;
-        margin-left: 50%;
-        padding-left: 95px;
-        line-height: 26px;
+        max-width: 320px;
+    }
+
+    .blockquote__user-foto {
+        margin-right: 25px;
     }
 
 }
@@ -143,13 +156,13 @@
 }
 
 @media (max-width:320px) {
- 
+
     .about-us__text-wrapper {
         grid-template-columns: 100%;
         grid-template-rows: auto auto 280px auto;
         grid-row-gap: 21px;
         background-size: 100%;
-        background-position: 0 150px ;
+        background-position: 0 150px;
     }
 
     .about-us__text {
@@ -165,13 +178,23 @@
         font-size: 22px;
     }
 
+    .blockquote__text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
     .blockquote__cite {
-        width: 100%;
+        max-width: 100%;
         height: 56px;
         margin-left: 0;
-        padding-left: 95px;
+        height: 78px;
         font-size: 12px;
         line-height: 16px;
     }
 
+    .blockquote__user-foto {
+        width: 56px;
+        height: 56px;
+        margin-right: 11px;
+    }
 }
